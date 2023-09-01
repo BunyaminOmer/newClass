@@ -1,0 +1,14 @@
+* instances (object) | Turkish (Örnekler)
+
+* constructor | Turkish (Yapıcı Method)
+
+!!! ⚠️⚠️⚠️⚠️⚠️ Uyarı ⚠️⚠️⚠️⚠️⚠️ !!!
+
+constructor self kullanılmadan olmaz!!!
+
+    |
+    |
+    |
+    |
+
+Yapıcı Method
