@@ -12,3 +12,5 @@ constructor self kullanılmadan olmaz!!!
     |
 
 Yapıcı Method
+
+Python'da property, bir sınıf içindeki bir özelliğin (attribute) davranışını özelleştirmenizi veya kontrol etmenizi sağlayan bir yapıdır.

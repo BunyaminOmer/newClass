@@ -1,0 +1,1 @@
+"Namespace," programlama dilinde isimlerin düzenli ve çakışmasız bir şekilde kullanılmasını sağlayan bir yapıdır. İsim çakışmalarını önlemek ve kodu organize etmek için kullanılır.
