@@ -1,10 +1,3 @@
-# Inheritance (Kalıtım): Miras Alma
-
-# Person => name, lastname, age, eat(), run(), drink()
-# Student(Person), Teacher(Person)
-
-# Animal => Dog(Animal), Cat(Animal)
-
 class Person:
     def __init__(self, fname, lname):
         self.firstName = fname
@@ -19,16 +12,16 @@ class Person:
 
 class Student(Person):
     def __init__(self, fname, lname, number):
-        Person.__init__(self, fname, lname)
+        super().__init__(fname, lname)
         self.studentNumber = number
-        print("student created.")
+        print("Student created.")
 
     # override
     def who_am_i(self):
         print("I am a student.")
 
     def sayHello(self):
-        print("Hello I am a student.")
+        print("Hello, I am a student.")
 
 class Teacher(Person):
     def __init__(self, fname, lname, branch):
@@ -36,11 +29,11 @@ class Teacher(Person):
         self.branch = branch
 
     def who_am_i(self):
-        print("I am a {self.branch} teacher.")
+        print(f"I am a {self.branch} teacher.")
 
-p1 = Person("Ali","Yılmaz")
-s1 = Student("Çınar","Turan",1256)
-t1 = Teacher("Serkan","Yılmaz","Math")
+p1 = Person("Ali", "Yılmaz")
+s1 = Student("Çınar", "Turan", "1256")
+t1 = Teacher("Serkan", "Yılmaz", "Math")
 
 print(p1.firstName + " " + p1.lastName)
 print(s1.firstName + " " + s1.lastName + " " + s1.studentNumber)

@@ -20,12 +20,11 @@ class Yazilimci(Personel):
 
    def __init__(self, isim, soyisim, maas, prog_dili):
       super().__init__(isim, soyisim, maas)
-      # print(f"Yeni Personel yazılımcı kategorisine taşındı: {self.isim} {self.soyisim}")
       self.prog_dili = prog_dili
 
 class Mudur(Personel):
 
-   def __init__(self, isim, soyisim, maas, personeller = None):
+   def __init__(self, isim, soyisim, maas, personeller=None):
       super().__init__(isim, soyisim, maas)
       if personeller is None:
          self.personeller = []
@@ -54,7 +53,7 @@ print(mdr_1.tam_isim())
 print("______________")
 mdr_1.personelleri_listele()
 print("______________")
-mdr_1.personelleri_ekle(yaz_2)
+mdr_1.personel_ekle(yaz_2)
 mdr_1.personel_cikar(yaz_1)
 mdr_1.personelleri_listele()
 
@@ -63,4 +62,4 @@ mdr_1.personelleri_listele()
 # print(isinstance(123, str))
 
 # issubclass()
-print(issubclass(Mudur, Yazilimci))
+print(issubclass(Yazilimci, Mudur))
